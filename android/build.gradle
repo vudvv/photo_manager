@@ -128,12 +128,6 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
-    compileOptions {
-        def version = getJavaVersion()
-        sourceCompatibility = version
-        targetCompatibility = version
-    }
-
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
